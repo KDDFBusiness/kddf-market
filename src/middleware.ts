@@ -21,7 +21,7 @@ export async function middleware(request: NextRequest) {
     {
       cookies: {
         getAll: () => request.cookies.getAll(),
-        setAll: (list: { name: string; value: string }[]) => {
+        setAll: (list: { name: string; value: string; options?: any }[]) => {
           list.forEach(({ name, value }) => request.cookies.set(name, value));
           const carry = response.cookies.getAll();
           response = NextResponse.next({ request });
