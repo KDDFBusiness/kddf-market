@@ -4,7 +4,7 @@ import { createClient } from "@/lib/supabase/server";
 export default async function Navbar() {
   const supabase = createClient();
   const { data } = await supabase.auth.getUser();
-  const name = process.env.NEXT_PUBLIC_APP_NAME || "Vendora";
+  const name = process.env.NEXT_PUBLIC_APP_NAME || "KDDF Market";
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/5 bg-ink-950/70 backdrop-blur-xl">
