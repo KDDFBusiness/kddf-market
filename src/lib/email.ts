@@ -1,6 +1,6 @@
 import { Resend } from "resend";
 
-const appName = () => process.env.NEXT_PUBLIC_APP_NAME || "Vendora";
+const appName = () => process.env.NEXT_PUBLIC_APP_NAME || "KDDF Market";
 
 export async function sendPurchaseEmail(args: {
   to: string;
